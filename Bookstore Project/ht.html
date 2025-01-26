@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Modern Bookstore</h1>
+        <input type="text" id="search" placeholder="Search for books...">
+    </header>
+    <main>
+        <section id="book-list">
+            <h2>Book List</h2>
+            <ul id="books"></ul>
+        </section>
+        
+        <section id="add-book">
+            <h2>Add / Edit Book</h2>
+            <form id="book-form">
+                <input type="hidden" id="book-id">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <textarea id="summary" placeholder="Book Summary"></textarea>
+                <button type="submit">Save Book</button>
+				<button onclick="deletebook">Delete</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
